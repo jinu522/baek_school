@@ -1,55 +1,12 @@
-basic.forever(function () {
-    basic.showIcon(IconNames.Happy)
-})
-basic.forever(function () {
-    basic.showLeds(`
-        . # . # .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
-    basic.showLeds(`
-        . # . # .
-        # . # . #
-        # . . . #
-        . # . # .
-        . . # . .
-        `)
-})
-basic.forever(function () {
-    basic.showLeds(`
-        . # . # .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
-    basic.pause(1000)
-    basic.showLeds(`
-        . # . # .
-        # . # . #
-        # . . . #
-        . # . # .
-        . . # . .
-        `)
-    basic.pause(1000)
-})
-basic.forever(function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-})
-basic.forever(function () {
-    basic.showLeds(`
-        . # . # .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
+input.onButtonPressed(Button.A, function () {
+    music.playTone(147, music.beat(BeatFraction.Whole))
+    music.playTone(165, music.beat(BeatFraction.Whole))
+    music.playTone(175, music.beat(BeatFraction.Half))
+    music.playTone(175, music.beat(BeatFraction.Whole))
+    music.playTone(175, music.beat(BeatFraction.Whole))
+    music.playTone(175, music.beat(BeatFraction.Half))
+    music.playTone(175, music.beat(BeatFraction.Half))
+    music.playTone(175, music.beat(BeatFraction.Half))
+    music.playTone(175, music.beat(BeatFraction.Half))
+    music.playTone(147, music.beat(BeatFraction.Whole))
 })
